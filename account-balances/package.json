@@ -8,7 +8,9 @@
     "prepack": "rm -rf dist && npm build",
     "test": "jest",
     "codegen": "./node_modules/.bin/massbit codegen",
-    "deploy": "./node_modules/.bin/massbit publish"
+    "deploy": "./node_modules/.bin/massbit deploy --endpoint http://127.0.0.1:3000/indexers",
+    "start:manager":  "docker-compose -f manager.docker-compose.yml up",
+    "start:query": "docker-compose -f query.docker-compose.yml up"
   },
   "homepage": "",
   "repository": "",
@@ -18,13 +20,9 @@
     "project.yaml"
   ],
   "devDependencies": {
-    "@massbit/cli": "0.8.0",
-    "@massbit/types": "0.5.0",
+    "@massbit/cli": "^0.1.0",
+    "@massbit/types": "^0.1.0",
     "@polkadot/api": "^5.7.1",
     "typescript": "^4.1.3"
-  },
-  "dependencies": {
-    "adm-zip": "^0.5.9",
-    "axios": "^0.24.0"
   }
 }

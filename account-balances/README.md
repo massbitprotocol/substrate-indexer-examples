@@ -18,10 +18,21 @@ yarn codegen
 yarn build
 ```
 
-### 4. Deploy the project
+### 4. Start Indexer Manager
+```shell
+yarn start:manager
+
+```
+
+### 5. Deploy the project
 
 ```shell
 yarn deploy
+```
+
+### 6. After indexer starting, run GraphQL query service
+```shell
+yarn start:query
 ```
 
 ### 5. Example query to run
