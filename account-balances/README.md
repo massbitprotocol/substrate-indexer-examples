@@ -35,7 +35,7 @@ yarn deploy
 yarn start:query
 ```
 
-### 5. Example query to run
+### 7. Open `http://127.0.0.1:3001`, run following query
 
 ```shell
 query {
