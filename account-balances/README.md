@@ -12,7 +12,7 @@ yarn
 yarn codegen
 ```
 
-### 3. Build the project
+### 3. Build the indexer
 
 ```shell
 yarn build
@@ -21,10 +21,9 @@ yarn build
 ### 4. Start Indexer Manager
 ```shell
 yarn start:manager
-
 ```
 
-### 5. Deploy the project
+### 5. Deploy the indexer
 
 ```shell
 yarn deploy
